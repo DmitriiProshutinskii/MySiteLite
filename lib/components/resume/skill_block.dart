@@ -26,19 +26,17 @@ class SkillBlock extends StatelessWidget {
         const SizedBox(width: 32),
         SizedBox(
           width: 446,
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                MyTextBodyStrong(
-                  params.description,
-                  color: MyColors.neutral30,
-                ),
-                const SizedBox(height: 24),
-                SkillList(nameSkillMap: params.map),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              MyTextBodyStrong(
+                params.description,
+                color: MyColors.neutral30,
+              ),
+              const SizedBox(height: 24),
+              SkillList(nameSkillMap: params.map),
+            ],
           ),
         ),
         const SizedBox(height: 32),

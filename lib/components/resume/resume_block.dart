@@ -35,23 +35,21 @@ class ResumeBlock extends StatelessWidget {
         const SizedBox(width: 32),
         SizedBox(
           width: 430,
-          child: Expanded(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                MyTextBodyStrong(
-                  params.description,
-                  color: MyColors.neutral30,
-                ),
-                const SizedBox(width: 24),
-                ResumeRollUp(
-                  title: 'Key skills and tools',
-                  text: params.keySkills,
-                ),
-                const SizedBox(width: 24),
-                ResumeRollUp(title: 'Competencies', text: params.competites),
-              ],
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              MyTextBodyStrong(
+                params.description,
+                color: MyColors.neutral30,
+              ),
+              const SizedBox(width: 24),
+              ResumeRollUp(
+                title: 'Key skills and tools',
+                text: params.keySkills,
+              ),
+              const SizedBox(width: 24),
+              ResumeRollUp(title: 'Competencies', text: params.competites),
+            ],
           ),
         ),
         const SizedBox(height: 32),

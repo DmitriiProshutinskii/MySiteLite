@@ -46,21 +46,19 @@ class _ResumeRollUpState extends State<ResumeRollUp> {
         CupertinoButton(
           padding: EdgeInsets.zero,
           onPressed: onPressed,
-          child: Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                MyTextBodyStrong(widget.title),
-                Flex(direction: Axis.horizontal),
-                Transform.rotate(
-                  angle: _angle,
-                  child: const Icon(
-                    Icons.chevron_left,
-                    color: MyColors.neutral20,
-                  ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              MyTextBodyStrong(widget.title),
+              Flex(direction: Axis.horizontal),
+              Transform.rotate(
+                angle: _angle,
+                child: const Icon(
+                  Icons.chevron_left,
+                  color: MyColors.neutral20,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         AnimatedSize(

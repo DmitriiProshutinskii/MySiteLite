@@ -38,29 +38,27 @@ class EducationBlock extends StatelessWidget {
         const SizedBox(width: 32),
         SizedBox(
           width: 430,
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                MyTextBodyStrong(
-                  params.description,
-                  color: MyColors.neutral30,
-                ),
-                const SizedBox(height: 24),
-                const MyTextBodyStrong('The topic of the thesis'),
-                const SizedBox(height: 12),
-                MyTextBodyStrong(params.thesis),
-                const SizedBox(height: 24),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const MyTextBodyStrong('GPA'),
-                    MyTextBodyStrong(params.gpa),
-                  ],
-                )
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              MyTextBodyStrong(
+                params.description,
+                color: MyColors.neutral30,
+              ),
+              const SizedBox(height: 24),
+              const MyTextBodyStrong('The topic of the thesis'),
+              const SizedBox(height: 12),
+              MyTextBodyStrong(params.thesis),
+              const SizedBox(height: 24),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const MyTextBodyStrong('GPA'),
+                  MyTextBodyStrong(params.gpa),
+                ],
+              )
+            ],
           ),
         ),
         const SizedBox(height: 32),
